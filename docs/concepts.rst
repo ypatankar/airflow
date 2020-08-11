@@ -1283,7 +1283,7 @@ marked as template fields:
 
   t = PythonOperator(
       task_id='transform_data',
-      python_callable=transform_data
+      python_callable=transform_data,
       op_args=[
         MyDataTransformer(MyDataReader('/tmp/{{ ds }}/my_file'))
       ],
